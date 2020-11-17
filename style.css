@@ -19,3 +19,52 @@ a {
 img {
   border: 0;
 }
+
+/* body */
+
+body {
+  background-image: url("./img/daredevil-Goddard.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* box */
+
+.box {
+  width: 1080px;
+  height: 600px;
+  margin: 50px auto;
+}
+
+.box > h1 {
+  text-align: center;
+  font-size: 45px;
+  color: antiquewhite;
+}
+
+/* timer */
+
+.timer {
+  overflow: hidden;
+  margin-top: 55px;
+}
+
+.timer div {
+  width: 17%;
+  height: 240px;
+  float: left;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  background-color: rgb(8, 8, 8);
+}
+
+.timer div h1 {
+  color: cornsilk;
+  font-size: 90px;
+}
+
+.timer div span {
+  font-size: 20px;
+  color: antiquewhite;
+}
