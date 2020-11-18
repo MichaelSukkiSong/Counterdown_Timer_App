@@ -3,6 +3,11 @@
 s- future date
 - timer
 ************************** */
+
+/*********** */
+/*Calculation*/
+/*********** */
+
 // current time in milliseconds
 let now = Date.now();
 // target date
@@ -47,6 +52,17 @@ let second_final = Math.round(
     60 -
     minute_final) *
     60
-);
+).toString();
+// console.log(month_final, day_final, hour_final, minute_final, second_final);
 
-console.log(month_final, day_final, hour_final, minute_final, second_final);
+/*********** */
+/*Display in UI*/
+/*********** */
+
+// setTimeout(window.location.reload(), 3);
+
+document.querySelector(".months h1").textContent = month_final;
+document.querySelector(".days h1").textContent = day_final;
+document.querySelector(".hours h1").textContent = hour_final;
+document.querySelector(".minutes h1").textContent = minute_final;
+document.querySelector(".seconds h1").textContent = second_final;
